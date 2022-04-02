@@ -37,11 +37,8 @@ export default function Navbar() {
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map(item => (
-                <Link href={item.href}>
-                  <a
-                    key={item.name}
-                    className="font-bold text-gray-500 hover:text-gray-900"
-                  >
+                <Link key={item.name} href={item.href}>
+                  <a className="font-bold text-gray-500 hover:text-gray-900">
                     {item.name}
                   </a>
                 </Link>
@@ -86,11 +83,8 @@ export default function Navbar() {
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map(item => (
-                  <Link href={item.href}>
-                    <a
-                      key={item.name}
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                    >
+                  <Link key={item.name} href={item.href}>
+                    <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                       {item.name}
                     </a>
                   </Link>
