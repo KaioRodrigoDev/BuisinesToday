@@ -30,19 +30,17 @@ export default function Home() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Link
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-principal hover:bg-principalh md:py-4 md:text-lg md:px-10"
-                  >
-                    Orçamento
+                  <Link href="#">
+                    <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-principal hover:bg-principalh md:py-4 md:text-lg md:px-10">
+                      Orçamento
+                    </a>
                   </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Link
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                  >
-                    Serviços
+                  <Link href="#">
+                    <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+                      Serviços
+                    </a>
                   </Link>
                 </div>
               </div>

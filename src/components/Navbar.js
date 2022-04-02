@@ -22,8 +22,10 @@ export default function Navbar() {
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <Link href="/">
-                  <span className="sr-only">Workflow</span>
-                  <GlobeIcon className="h-8 w-auto sm:h-10 text-principal" />
+                  <a>
+                    <span className="sr-only">Workflow</span>
+                    <GlobeIcon className="h-8 w-auto sm:h-10 text-principal" />
+                  </a>
                 </Link>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -35,19 +37,19 @@ export default function Navbar() {
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map(item => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="font-bold text-gray-500 hover:text-gray-900"
-                >
-                  {item.name}
+                <Link href={item.href}>
+                  <a
+                    key={item.name}
+                    className="font-bold text-gray-500 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </a>
                 </Link>
               ))}
-              <Link
-                href="#"
-                className="font-bold text-principal hover:text-principalh"
-              >
-                Orçamento
+              <Link href="/">
+                <a className="font-bold text-principal hover:text-principalh">
+                  Orçamento
+                </a>
               </Link>
             </div>
           </nav>
@@ -84,21 +86,21 @@ export default function Navbar() {
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map(item => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </a>
+                  <Link href={item.href}>
+                    <a
+                      key={item.name}
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </a>
+                  </Link>
                 ))}
               </div>
-              <a
-                href="#"
-                className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-              >
-                Log in
-              </a>
+              <Link href="/">
+                <a className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+                  Log in
+                </a>
+              </Link>
             </div>
           </Popover.Panel>
         </Transition>
