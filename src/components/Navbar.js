@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { MenuIcon, XIcon, GlobeIcon } from '@heroicons/react/outline'
 import { Popover, Transition } from '@headlessui/react'
+import Link from 'next/dist/client/link'
 
 const navigation = [
   { name: 'Serviços', href: '/servicos' },
