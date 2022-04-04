@@ -5,7 +5,7 @@ import Link from 'next/dist/client/link'
 
 const navigation = [
   { name: 'Serviços', href: '/servicos' },
-  { name: 'Sobre Nós', href: '#' }
+  { name: 'Sobre Nós', href: '/sobre' }
 ]
 
 // import { Container } from './styles';
@@ -52,7 +52,7 @@ export default function Navbar() {
           </nav>
         </div>
 
-        <Popover.Panel className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right ">
+        <Popover.Panel className="absolute z-30 top-0 inset-x-0 p-2 transition transform md:hidden origin-top-right ">
           <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
             <div className="px-5 pt-4 flex items-center justify-between">
               <div>
