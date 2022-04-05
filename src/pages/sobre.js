@@ -46,10 +46,10 @@ export default function Serviços() {
               className="lg:text-center"
             >
               <h2 className="text-base text-principal font-semibold tracking-wide uppercase">
-                Serviços
+                Sobre nós
               </h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Quem somos nós ?
+                Quem somos ?
               </p>
               <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                 Vamos conhecer um pouco mais sobre a
@@ -75,7 +75,7 @@ export default function Serviços() {
                 >
                   <div className="w-20 h-20 relative mr-5">
                     <div className="absolute top-0 right-0 bg-indigo-100 rounded w-16 h-16 mt-2 mr-1" />
-                    <div className="absolute text-white bottom-0 left-0 bg-indigo-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                    <div className="absolute text-white bottom-0 left-0 bg-principal rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
                       <feature.icon className="w-8 h-8" />
                     </div>
                   </div>

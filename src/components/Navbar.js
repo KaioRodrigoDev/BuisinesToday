@@ -2,6 +2,8 @@ import { Fragment } from 'react'
 import { MenuIcon, XIcon, GlobeIcon } from '@heroicons/react/outline'
 import { Popover, Transition } from '@headlessui/react'
 import Link from 'next/dist/client/link'
+import Logo from '../../public/Logo.png'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Serviços', href: '/servicos' },
@@ -13,8 +15,8 @@ const navigation = [
 export default function Navbar() {
   return (
     <div>
-      <Popover className="border-b-2 border-gray-200 pb-5 font-bold">
-        <div className="relative pt-6 px-4 sm:px-6 lg:px-8 ">
+      <Popover className="border-b-2 border-gray-200 pb-2 lg:pb-5 font-bold">
+        <div className="relative pt-4 lg:pt-6 px-4 sm:px-6 lg:px-8 ">
           <nav
             className="relative flex items-center justify-between sm:h-10 lg:justify-start"
             aria-label="Global"
@@ -23,8 +25,10 @@ export default function Navbar() {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <Link href="/">
                   <a>
-                    <span className="sr-only">Workflow</span>
-                    <GlobeIcon className="h-8 w-auto sm:h-10 text-principal" />
+                    <img
+                      src="./Logo.svg"
+                      className="h-16 w-16 sm:h-20 sm:w-20 text-principal"
+                    />
                   </a>
                 </Link>
                 <div className="-mr-2 flex items-center md:hidden">
@@ -43,7 +47,7 @@ export default function Navbar() {
                   </a>
                 </Link>
               ))}
-              <Link href="/">
+              <Link href="/orcamento">
                 <a className="font-bold text-principal hover:text-principalh">
                   Orçamento
                 </a>
@@ -58,8 +62,10 @@ export default function Navbar() {
               <div>
                 <Link href="/">
                   <a>
-                    <span className="sr-only">Workflow</span>
-                    <GlobeIcon className="h-8 w-auto sm:h-10 text-principal" />
+                    <img
+                      src="./Logo.svg"
+                      className="h-16 w-16 sm:h-6 sm:w-6 text-principal"
+                    />
                   </a>
                 </Link>
               </div>

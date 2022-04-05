@@ -32,7 +32,7 @@ const features = [
     icon: LightningBoltIcon
   },
   {
-    name: 'NO QUE ACREDITAMOS?',
+    name: 'No que acreditamos?',
     sub: 'Acreditamos em um crescimento de empresas pela digitalização',
     description:
       'Por meio de projetos estratégicos, personalizados de acordo com a necessidade de cada cliente, desejamos que tenham autoridade e expansão exponencial no universo digital.',
@@ -73,7 +73,7 @@ export default function Serviços() {
                 className="relative"
               >
                 <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-principal text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <p className="ml-16 text-lg leading-6 font-bold text-principal">
