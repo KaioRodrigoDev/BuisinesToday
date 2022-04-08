@@ -34,10 +34,10 @@ const features = [
 
 export default function Serviços() {
   return (
-    <div className="pb-16">
+    <div className="dark:bg-bg pb-16">
       {/* Code block starts */}
       <dh-component>
-        <section className="max-w-8xl mx-auto container bg-white pt-6">
+        <section className="max-w-8xl mx-auto container  pt-6">
           <div>
             <motion.div
               initial={{ opacity: 0, y: -100 }}

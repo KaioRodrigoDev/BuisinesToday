@@ -15,7 +15,7 @@ const navigation = [
 export default function Navbar() {
   return (
     <div>
-      <Popover className="border-b-2 border-gray-200 pb-2 lg:pb-5 font-bold">
+      <Popover className="border-b-2 border-gray-200 pb-2 lg:pb-5 font-bold dark:bg-bg dark:border-gray-500">
         <div className="relative pt-4 lg:pt-6 px-4 sm:px-6 lg:px-8 ">
           <nav
             className="relative flex items-center justify-between sm:h-10 lg:justify-start"

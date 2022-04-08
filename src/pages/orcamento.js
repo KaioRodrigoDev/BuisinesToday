@@ -1,91 +1,48 @@
 import React from 'react'
 
 // import { Container } from './styles';
-import { useState } from 'react'
+const Info = [
+  {
+    title: 'Quem somos ?',
+    desc: 'Somos um grupo visionário e criativo',
+    list: ['teste', 'teste2', 'teste3'],
+    price: 'R$ 1.000,00',
+    img: 'https://picsum.photos/200/300'
+  }
+]
 
 export default function Orcamento() {
   return (
-    <div className="w-full flex items-center justify-center my-12 text-white">
-      <div className="absolute top-40 bg-gradient-to-b from-principal to-[#29235C] shadow rounded py-12 lg:px-28 px-8">
-        <p className="md:text-3xl text-xl font-bold leading-7 text-center ">
-          Let’s chat and get a quote!
-        </p>
-        <div className="md:flex items-center mt-12">
-          <div className="md:w-72 flex flex-col">
-            <label className="text-base font-semibold leading-none ">
-              Name
-            </label>
-            <input
-              tabIndex={0}
-              arial-label="Please input name"
-              type="name"
-              className="text-base leading-none  p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-              placeholder="Please input  name"
-            />
-          </div>
-          <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-            <label className="text-base font-semibold leading-none ">
-              Email Address
-            </label>
-            <input
-              tabIndex={0}
-              arial-label="Please input email address"
-              type="name"
-              className="text-base leading-none  p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-              placeholder="Please input email address"
-            />
+    <div className="min-h-screen pt-4 flex  justify-center text-white dark:bg-bg">
+      <div className="grid grid-cols-4 gap-4 px-14 ">
+        <div className="bg-gradient-to-b from-principal rounded-t-lg text-center">
+          <h1 className="text-2xl font-bold pl-2  ">Design</h1>
+          <p className="text-xs text-slate-200">Lorem ipsum dolor sit amet .</p>
+          <p className="text-xs text-slate-200">
+            R$
+            <span className="text-2xl pr-2 -ml-1"> 20</span>a partir
+          </p>
+          <p className=" text-slate-200 px-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, quisquam.
+          </p>
+          <div>
+            <p className=" text-slate-200">• Lorem ipsum dolor</p>
+
+            <p className=" text-slate-200">• Lorem ipsum dolor</p>
           </div>
         </div>
-        <div className="md:flex items-center mt-8">
-          <div className="md:w-72 flex flex-col">
-            <label className="text-base font-semibold leading-none ">
-              Company name
-            </label>
-            <input
-              tabIndex={0}
-              role="input"
-              arial-label="Please input company name"
-              type="name"
-              className="text-base leading-none  p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 "
-              placeholder="Please input company name"
-            />
-          </div>
-          <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-            <label className="text-base font-semibold leading-none ">
-              Country
-            </label>
-            <input
-              tabIndex={0}
-              arial-label="Please input country name"
-              type="name"
-              className="text-base leading-none  p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-              placeholder="Please input country name"
-            />
-          </div>
+        <div className="bg-gradient-to-b from-sky-600">
+          <h1 className="text-2xl font-bold w-1/4">Programação</h1>
         </div>
         <div>
-          <div className="w-full flex flex-col mt-8">
-            <label className="text-base font-semibold leading-none ">
-              Message
-            </label>
-            <textarea
-              tabIndex={0}
-              aria-label="leave a message"
-              role="textbox"
-              type="name"
-              className="h-36 text-base leading-none  p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
-              defaultValue={''}
-            />
-          </div>
+          <h1 className="text-2xl font-bold w-1/4">Fotografia</h1>
         </div>
-        <p className="text-xs leading-3  mt-4">
-          By clicking submit you agree to our terms of service, privacy policy
-          and how we use data as stated
-        </p>
-        <div className="flex items-center justify-center w-full">
-          <button className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none">
-            SUBMIT
-          </button>
+        <div>
+          <h1 className="text-2xl font-bold w-1/4">Marketing</h1>
+        </div>
+        <div>
+          <h1 className="text-2xl font-bold w-1/4">Orçamento</h1>
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ const features = [
 
 export default function Serviços() {
   return (
-    <div className="py-10 bg-white">
+    <div className="py-10 dark:bg-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
@@ -53,7 +53,7 @@ export default function Serviços() {
           <h2 className="text-base text-principal font-semibold tracking-wide uppercase">
             Serviços
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Um pouco do que fazemos
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -80,10 +80,10 @@ export default function Serviços() {
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-900">
+                <dd className="mt-2 ml-16 text-base text-gray-900 dark:text-white">
                   {feature.sub}
                 </dd>
-                <dd className="ml-16 text-base text-gray-900">
+                <dd className="ml-16 text-base text-gray-900 dark:text-white">
                   {feature.sub2}
                 </dd>
                 <dd className="mt-2 ml-16 text-base text-gray-500">
