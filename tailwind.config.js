@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         principal: '#9400c0',
         principalh: '#9400c0',
+        blue: '#29235C',
         bg: '#111827'
       }
     }

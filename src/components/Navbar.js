@@ -42,7 +42,7 @@ export default function Navbar() {
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map(item => (
                 <Link key={item.name} href={item.href}>
-                  <a className="font-bold text-gray-500 hover:text-gray-900">
+                  <a className="font-bold text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     {item.name}
                   </a>
                 </Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            <Link href="/">
+            <Link href="/orcamento">
               <a className="block w-full px-5 py-3 text-center font-medium text-principal bg-gray-50 hover:bg-gray-100">
                 Orçamentos
               </a>

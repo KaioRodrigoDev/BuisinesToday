@@ -48,7 +48,7 @@ export default function Serviços() {
               <h2 className="text-base text-principal font-semibold tracking-wide uppercase">
                 Sobre nós
               </h2>
-              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 Quem somos ?
               </p>
               <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -82,13 +82,13 @@ export default function Serviços() {
                   <div className="w-10/12">
                     <h2
                       tabIndex={0}
-                      className="focus:outline-none text-lg font-bold leading-tight text-principal"
+                      className="focus:outline-none text-lg font-black leading-tight text-principal"
                     >
                       {feature.name}
                     </h2>
                     <p
                       tabIndex={0}
-                      className="focus:outline-none text-base text-black leading-normal pt-2"
+                      className="focus:outline-none text-base text-black leading-normal dark:text-white pt-2"
                     >
                       {feature.sub}
                     </p>

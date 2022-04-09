@@ -39,15 +39,15 @@ export default function Home() {
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
-                    <Link href="#">
-                      <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-principal hover:bg-principalh md:py-4 md:text-lg md:px-10">
+                    <Link href="/orcamento">
+                      <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-principal hover:bg-principalh md:py-4 md:text-lg md:px-10 hover:animate-pulse">
                         Orçamento
                       </a>
                     </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <Link href="#">
-                      <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-principal bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+                    <Link href="/servicos">
+                      <a className="w-full hover:animate-pulse flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-principal bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
                         Serviços
                       </a>
                     </Link>
