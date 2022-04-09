@@ -41,7 +41,10 @@ export default function Orcamento() {
     <div className="min-h-screen pt-16 flex  justify-center text-white dark:bg-bg">
       <div className="grid  gap-4 px-14 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
         {Info.map(item => (
-          <div className=" flex flex-col h-min bg-gradient-to-b from-principal to-blue rounded-lg text-center  ">
+          <div
+            key={item.name}
+            className=" flex flex-col h-min bg-gradient-to-b from-principal to-blue rounded-lg text-center  "
+          >
             <div>
               <div className="flex items-center justify-center ">
                 <img src={item.img} width="35%" className=" my-4" />
@@ -58,7 +61,9 @@ export default function Orcamento() {
               <p className=" text-slate-200 px-1 py-2 ">{item.desc}</p>
               <div>
                 {item.itens.map(item => (
-                  <p className="text-xs mt-2 text-slate-200">• {item}</p>
+                  <p key={item} className="text-xs mt-2 text-slate-200">
+                    • {item}
+                  </p>
                 ))}
               </div>
             </div>
