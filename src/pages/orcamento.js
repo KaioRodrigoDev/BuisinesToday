@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 // import { Container } from './styles';
 const Info = [
@@ -16,7 +17,7 @@ const Info = [
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
-    img: './orcamento/design.png'
+    img: './orcamento/code.png'
   },
   {
     title: 'Fotografia',
@@ -24,7 +25,7 @@ const Info = [
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
-    img: './orcamento/design.png'
+    img: './orcamento/photo.png'
   },
   {
     title: 'Marketing',
@@ -32,7 +33,7 @@ const Info = [
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
-    img: './orcamento/design.png'
+    img: './orcamento/marketing.png'
   }
 ]
 
@@ -40,9 +41,12 @@ export default function Orcamento() {
   return (
     <div className="min-h-screen pt-16 flex  justify-center text-white dark:bg-bg">
       <div className="grid  gap-4 px-14 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
-        {Info.map(item => (
-          <div
+        {Info.map((item, key) => (
+          <motion.div
             key={item.name}
+            initial={{ opacity: 0, y: +200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 + 0.2 * key }}
             className=" flex flex-col h-min bg-gradient-to-b from-principal to-blue rounded-lg text-center  "
           >
             <div>
@@ -60,10 +64,16 @@ export default function Orcamento() {
               </p>
               <p className=" text-slate-200 px-1 py-2 ">{item.desc}</p>
               <div>
-                {item.itens.map(item => (
-                  <p key={item} className="text-xs mt-2 text-slate-200">
+                {item.itens.map((item, key) => (
+                  <motion.p
+                    initial={{ opacity: 0, y: +100 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.0 + 0.3 * key }}
+                    key={item}
+                    className="text-xs mt-2 text-slate-200"
+                  >
                     • {item}
-                  </p>
+                  </motion.p>
                 ))}
               </div>
             </div>
@@ -72,7 +82,7 @@ export default function Orcamento() {
                 Adquirir
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
