@@ -3,10 +3,26 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const skills = [
-  { img: '', ferramenta: 'Photoshop', desc: 'Lorem ipsum' },
-  { img: '', ferramenta: 'Adobe XD', desc: 'Lorem ipsum' },
-  { img: '', ferramenta: 'Adobe AI', desc: 'Lorem ipsum' },
-  { img: '', ferramenta: 'Adobe Y', desc: 'Lorem ipsum' }
+  {
+    img: './programacao/next.svg',
+    ferramenta: 'NextJS',
+    desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
+  },
+  {
+    img: './programacao/react.svg',
+    ferramenta: 'React Native',
+    desc: 'React Native é uma biblioteca criada pelo Facebook, para desenvolvimento de App mobile.'
+  },
+  {
+    img: './programacao/sql.svg',
+    ferramenta: 'MySQL',
+    desc: 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.'
+  },
+  {
+    img: './programacao/html.svg',
+    ferramenta: 'HTML',
+    desc: 'Alem do proprio HTML o dominio do CSS é a base do desenvolvimento web.'
+  }
 ]
 
 export default function Design() {
@@ -22,7 +38,7 @@ export default function Design() {
               className="lg:text-center"
             >
               <h2 className="text-base text-principal font-semibold tracking-wide uppercase">
-                Design
+                Programação
               </h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 Habilidades
@@ -47,7 +63,7 @@ export default function Design() {
                     {item.ferramenta}
                   </h1>
 
-                  <p className="text-xs ">{item.desc}</p>
+                  <p className="text-xs mx-4 font-medium mt-4">{item.desc}</p>
                 </div>
               </motion.div>
             ))}

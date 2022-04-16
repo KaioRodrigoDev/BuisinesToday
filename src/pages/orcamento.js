@@ -17,7 +17,8 @@ const Info = [
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
-    img: './orcamento/code.png'
+    img: './orcamento/code.png',
+    link: '/programacao'
   },
   {
     title: 'Fotografia',
