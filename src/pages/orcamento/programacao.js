@@ -4,28 +4,36 @@ import { motion } from 'framer-motion'
 
 const skills = [
   {
-    img: './programacao/next.svg',
+    img: '../programacao/next.svg',
     ferramenta: 'NextJS',
     desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
   },
   {
-    img: './programacao/react.svg',
+    img: '../programacao/react.svg',
     ferramenta: 'React Native',
     desc: 'React Native é uma biblioteca criada pelo Facebook, para desenvolvimento de App mobile.'
   },
   {
-    img: './programacao/sql.svg',
+    img: '../programacao/sql.svg',
     ferramenta: 'MySQL',
     desc: 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.'
   },
   {
-    img: './programacao/html.svg',
+    img: '../programacao/html.svg',
     ferramenta: 'HTML',
-    desc: 'Alem do proprio HTML o dominio do CSS é a base do desenvolvimento web.'
+    desc: 'Alem do proprio HTML o dominio do CSS e JavaScript são a base do desenvolvimento web.'
   }
 ]
 
-export default function Design() {
+const exp = [
+  {
+    img: '../programacao/next.svg',
+    titulo: 'NextJS',
+    desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
+  }
+]
+
+export default function Code() {
   return (
     <div className="py-10 dark:bg-bg">
       <section>
@@ -67,6 +75,54 @@ export default function Design() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10">
+        <div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="lg:text-center"
+            >
+              <h2 className="text-base text-principal font-semibold tracking-wide uppercase">
+                experiências
+              </h2>
+              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                Portfolio
+              </p>
+            </motion.div>
+          </div>
+          <div>
+            <div className=" px-14 ">
+              {exp.map((item, key) => (
+                <motion.div
+                  key={item.titulo}
+                  initial={{ opacity: 0, y: -100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 + 0.2 * key, delay: 0.5 }}
+                  className="flex flex-col mt-14 py-2  bg-white rounded-lg  w-full h"
+                >
+                  <div className=" my-4">
+                    <div className="flex items-center justify-center ">
+                      <div className="pl-6">
+                        <h1 className="text-2xl font-bold text-principal">
+                          {item.titulo}
+                        </h1>
+                        <p className="text-xs font-medium mt-4">{item.desc}</p>
+                      </div>
+
+                      <div className="flex justify-end px-4">
+                        <img src={item.img} width="5%" />
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

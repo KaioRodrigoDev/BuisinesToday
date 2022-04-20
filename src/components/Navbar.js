@@ -2,8 +2,6 @@ import { Fragment } from 'react'
 import { MenuIcon, XIcon, GlobeIcon } from '@heroicons/react/outline'
 import { Popover, Transition } from '@headlessui/react'
 import Link from 'next/dist/client/link'
-import Logo from '../../public/Logo.png'
-import Image from 'next/image'
 
 const navigation = [
   { name: 'Serviços', href: '/servicos' },
@@ -26,7 +24,7 @@ export default function Navbar() {
                 <Link href="/">
                   <a>
                     <img
-                      src="./Logo.svg"
+                      src="../Logo.svg"
                       className="h-16 w-16 sm:h-20 sm:w-20 text-principal"
                     />
                   </a>
