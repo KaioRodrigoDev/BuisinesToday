@@ -27,7 +27,12 @@ const skills = [
 
 const exp = [
   {
-    img: '../programacao/next.svg',
+    img: '../programacao/exp/linkedin.png',
+    titulo: 'NextJS',
+    desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
+  },
+  {
+    img: '../programacao/exp/linkedin.png',
     titulo: 'NextJS',
     desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
   }
@@ -63,9 +68,12 @@ export default function Code() {
                 className="flex flex-col mt-14 py-2  bg-white rounded-lg text-center"
               >
                 <div className=" my-2">
-                  <div className="flex items-center justify-center ">
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex items-center justify-center pb-2 "
+                  >
                     <img src={item.img} width="35%" />
-                  </div>
+                  </motion.div>
 
                   <h1 className="text-2xl font-bold pl-2 text-principal">
                     {item.ferramenta}
@@ -78,12 +86,6 @@ export default function Code() {
           </div>
         </div>
       </section>
-
-      <motion.div
-        className="w-[150px] h-[150px] rounded-md bg-principal"
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.8, borderRadius: '100%' }}
-      />
 
       <section className="py-10">
         <div>
@@ -121,8 +123,12 @@ export default function Code() {
                         <p className="text-xs font-medium mt-4">{item.desc}</p>
                       </div>
 
-                      <div className="flex justify-end px-4">
-                        <img src={item.img} width="5%" />
+                      <div className="flex justify-end pr-6 ">
+                        <img
+                          src={item.img}
+                          width="40%"
+                          className="rounded-lg"
+                        />
                       </div>
                     </div>
                   </div>
@@ -141,7 +147,7 @@ export default function Code() {
                 role="heading"
                 className="md:text-5xl text-3xl font-bold leading-10 mb-3 text-principal"
               >
-                Our pricing plan
+                Custos
               </h1>
               <p className="text-base leading-4 text-slate-400 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -161,32 +167,27 @@ export default function Code() {
                 className="absolute w-full -ml-12 mt-24"
                 alt="background circle images"
               />
-              <motion.div
-                initial={{ opacity: 0, x: +100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="bg-blue cursor-pointer shadow rounded-lg p-8 relative z-30"
-              >
+              <div className="bg-blue cursor-pointer shadow rounded-lg p-8 relative z-30">
                 <div className="md:flex items-center justify-between">
                   <h2 className="text-2xl font-semibold leading-6 text-white">
-                    Criação de Logotipos
+                    Landing Page
                   </h2>
                   <p className="text-2xl font-semibold md:mt-0 mt-4 leading-6 text-white">
-                    R$119
+                    R$ 2700
                   </p>
                 </div>
                 <p className="md:w-80 text-base leading-6 mt-4 text-slate-400">
-                  Full access to all features and no credit card required
+                  Site com uma landing page a seu gosto
                 </p>
-              </motion.div>
+              </div>
               <div className="bg-blue cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
                 <div className="w-full p-8">
                   <div className="md:flex items-center justify-between">
                     <h2 className="text-2xl font-semibold leading-6 text-white">
-                      Post Instagram
+                      Site Institucional
                     </h2>
                     <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-white">
-                      R$20<span className="font-normal text-base">/post</span>
+                      R$3000<span className="font-normal text-base"></span>
                     </p>
                   </div>
                   <p className="md:w-80 text-base leading-6 mt-4 text-slate-400">
@@ -197,10 +198,11 @@ export default function Code() {
               <div className="bg-blue cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7">
                 <div className="md:flex items-center justify-between">
                   <h2 className="text-2xl font-semibold leading-6 text-white">
-                    Carrosel
+                    E-Commerce
                   </h2>
                   <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-white">
-                    R$50<span className="font-normal text-base">/post</span>
+                    R$ 5000
+                    <span className="font-normal text-base">/a partir</span>
                   </p>
                 </div>
                 <p className="md:w-80 text-base leading-6 mt-4 text-slate-400">

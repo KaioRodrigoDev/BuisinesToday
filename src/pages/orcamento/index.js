@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 // import { Container } from './styles';
 const Info = [
@@ -9,7 +10,8 @@ const Info = [
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
-    img: './orcamento/design.png'
+    img: './orcamento/design.png',
+    link: 'orcamento/design'
   },
   {
     title: 'Programação',
@@ -18,7 +20,7 @@ const Info = [
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
     img: './orcamento/code.png',
-    link: '/programacao'
+    link: 'orcamento/programacao'
   },
   {
     title: 'Video Maker',
@@ -26,7 +28,8 @@ const Info = [
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
-    img: './orcamento/photo.png'
+    img: './orcamento/photo.png',
+    link: 'orcamento/videomaker'
   },
   {
     title: 'Marketing',
@@ -34,7 +37,8 @@ const Info = [
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
     price: '1.000',
-    img: './orcamento/marketing.png'
+    img: './orcamento/marketing.png',
+    link: 'orcamento/marketing'
   }
 ]
 
@@ -84,7 +88,7 @@ export default function Orcamento() {
                 whileTap={{ scale: 0.8 }}
                 className=" bg-principal text-white py-2 px-20 rounded-lg "
               >
-                Adquirir
+                <Link href={item.link}>Adquirir</Link>
               </motion.button>
             </div>
           </motion.div>
