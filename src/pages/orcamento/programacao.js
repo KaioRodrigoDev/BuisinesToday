@@ -79,6 +79,12 @@ export default function Code() {
         </div>
       </section>
 
+      <motion.div
+        className="w-[150px] h-[150px] rounded-md bg-principal"
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8, borderRadius: '100%' }}
+      />
+
       <section className="py-10">
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

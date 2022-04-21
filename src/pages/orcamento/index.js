@@ -21,7 +21,7 @@ const Info = [
     link: '/programacao'
   },
   {
-    title: 'Fotografia',
+    title: 'Video Maker',
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
@@ -41,14 +41,14 @@ const Info = [
 export default function Orcamento() {
   return (
     <div className="min-h-screen pt-16 flex  justify-center text-white dark:bg-bg">
-      <div className="grid  gap-4 px-14 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+      <div className=" grid gap-4 px-14 lg:grid-cols-4 2xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
         {Info.map((item, key) => (
           <motion.div
             key={item.name}
             initial={{ opacity: 0, y: +200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 + 0.2 * key }}
-            className=" flex flex-col h-min bg-gradient-to-b from-principal to-blue rounded-lg text-center  "
+            className=" flex align-center flex-col h-min bg-gradient-to-b from-principal to-blue rounded-lg text-center px-6  "
           >
             <div>
               <div className="flex items-center justify-center ">
@@ -79,9 +79,13 @@ export default function Orcamento() {
               </div>
             </div>
             <div className=" my-16 ">
-              <button className=" bg-principal text-white py-2 px-20 rounded-lg hover:animate-pulse">
+              <motion.button
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
+                className=" bg-principal text-white py-2 px-20 rounded-lg "
+              >
                 Adquirir
-              </button>
+              </motion.button>
             </div>
           </motion.div>
         ))}
