@@ -8,7 +8,7 @@ const Info = [
     title: 'Design',
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
-    itens: ['teste', 'teste2', 'teste3'],
+    itens: ['Motion Design', 'teste2', 'teste3'],
     price: '1.000',
     img: './orcamento/design.png',
     link: 'orcamento/design'
@@ -17,8 +17,8 @@ const Info = [
     title: 'Programação',
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
-    itens: ['teste', 'teste2', 'teste3'],
-    price: '1.000',
+    itens: ['E-commerce', 'Aplicativos', 'Landing Page'],
+    price: '3.000',
     img: './orcamento/code.png',
     link: 'orcamento/programacao'
   },
@@ -26,7 +26,7 @@ const Info = [
     title: 'Video Maker',
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
-    itens: ['teste', 'teste2', 'teste3'],
+    itens: ['Fotografia', 'Edições de Video', 'Edições de Foto'],
     price: '1.000',
     img: './orcamento/photo.png',
     link: 'orcamento/videomaker'
@@ -64,7 +64,7 @@ export default function Orcamento() {
               <p className="text-xs text-slate-200">{item.sub}</p>
               <p className="text-xs text-slate-200 mt-4">
                 R$
-                <span className="text-2xl pr-2 -ml-1"> {item.price}</span>a
+                <span className="text-2xl pr-2 -ml-1"> {item.price}</span>/a
                 partir
               </p>
               <p className=" text-slate-200 px-1 py-2 ">{item.desc}</p>
@@ -82,11 +82,11 @@ export default function Orcamento() {
                 ))}
               </div>
             </div>
-            <div className=" my-16 ">
+            <div className="flex my-16 text-center justify-center ">
               <motion.button
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
-                className=" bg-principal text-white py-2 px-20 rounded-lg "
+                className=" bg-principal text-white py-2 px-20 rounded-lg text-center "
               >
                 <Link href={item.link}>Adquirir</Link>
               </motion.button>

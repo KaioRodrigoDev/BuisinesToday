@@ -115,7 +115,7 @@ export default function Code() {
                   className="flex flex-col mt-14 py-2  bg-white rounded-lg  w-full h"
                 >
                   <div className=" my-4">
-                    <div className="flex items-center justify-center ">
+                    <div className="lg:flex text-center md:text-left lg:text-left items-center justify-center ">
                       <div className="pl-6">
                         <h1 className="text-2xl font-bold text-principal">
                           {item.titulo}
@@ -123,11 +123,11 @@ export default function Code() {
                         <p className="text-xs font-medium mt-4">{item.desc}</p>
                       </div>
 
-                      <div className="flex justify-end pr-6 ">
-                        <img
+                      <div className="flex pt-4 lg:pt-0 lg:justify-end md:justify-center justify-center lg:pr-12 ">
+                        <motion.img
                           src={item.img}
-                          width="40%"
-                          className="rounded-lg"
+                          whileHover={{ scale: 1.2 }}
+                          className="rounded-lg  w-[40%] "
                         />
                       </div>
                     </div>
@@ -195,7 +195,7 @@ export default function Code() {
                   </p>
                 </div>
               </div>
-              <div className="bg-blue cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7">
+              <div className="bg-blue cursor-pointer shadow rounded-lg p-8 relative z-30 mt-3">
                 <div className="md:flex items-center justify-between">
                   <h2 className="text-2xl font-semibold leading-6 text-white">
                     E-Commerce
