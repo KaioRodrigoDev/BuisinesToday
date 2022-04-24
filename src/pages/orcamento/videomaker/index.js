@@ -38,7 +38,7 @@ const exp = [
   }
 ]
 
-export default function Code() {
+export default function Videomaker() {
   return (
     <div className="py-10 dark:bg-bg">
       <section>
@@ -112,7 +112,7 @@ export default function Code() {
                   initial={{ opacity: 0, y: -100 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 + 0.2 * key, delay: 0.5 }}
-                  className="flex flex-col mt-14 py-2  bg-white rounded-lg  w-full "
+                  className="flex flex-col mt-14 py-2  bg-white rounded-lg  w-full h"
                 >
                   <div className=" my-4">
                     <div className="lg:flex text-center md:text-left lg:text-left items-center justify-center ">

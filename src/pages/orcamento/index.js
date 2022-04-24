@@ -84,7 +84,7 @@ export default function Orcamento() {
             </div>
             <div className="flex my-16 text-center justify-center ">
               <motion.button
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.8 }}
                 className=" bg-principal text-white py-2 px-20 rounded-lg text-center "
               >
