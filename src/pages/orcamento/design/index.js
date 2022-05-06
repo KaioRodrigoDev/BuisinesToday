@@ -3,10 +3,21 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const skills = [
-  { img: '', ferramenta: 'Photoshop', desc: 'Lorem ipsum' },
-  { img: '', ferramenta: 'Adobe XD', desc: 'Lorem ipsum' },
-  { img: '', ferramenta: 'Adobe AI', desc: 'Lorem ipsum' },
-  { img: '', ferramenta: 'Adobe Y', desc: 'Lorem ipsum' }
+  {
+    img: '../imgs/design/ps.svg',
+    ferramenta: 'Photoshop',
+    desc: 'Lorem ipsum'
+  },
+  {
+    img: '../imgs/design/ae.svg',
+    ferramenta: 'After Effects',
+    desc: 'Lorem ipsum'
+  },
+  {
+    img: '../imgs/design/ai.svg',
+    ferramenta: 'Adobe Illustrator',
+    desc: 'Lorem ipsum'
+  }
 ]
 
 export default function Design() {
@@ -29,7 +40,7 @@ export default function Design() {
               </p>
             </motion.div>
           </div>
-          <div className="grid  gap-4 px-14 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+          <div className="grid  gap-4 px-14 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
             {skills.map((item, key) => (
               <motion.div
                 key={item.ferramenta}
@@ -39,9 +50,12 @@ export default function Design() {
                 className="flex flex-col mt-14 py-2  bg-white rounded-lg text-center"
               >
                 <div className=" my-2">
-                  <div className="flex items-center justify-center ">
-                    <img src={item.img} width="35%" />
-                  </div>
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex items-center justify-center pb-2 "
+                  >
+                    <img src={item.img} width="30%" />
+                  </motion.div>
 
                   <h1 className="text-2xl font-bold pl-2 text-principal">
                     {item.ferramenta}

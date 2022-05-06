@@ -18,7 +18,7 @@ const Info = [
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['E-commerce', 'Aplicativos', 'Landing Page'],
-    price: '2.000',
+    price: '1.700',
     img: './orcamento/code.png',
     link: 'orcamento/programacao'
   },

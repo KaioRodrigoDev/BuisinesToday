@@ -4,22 +4,22 @@ import { motion } from 'framer-motion'
 
 const skills = [
   {
-    img: '../programacao/next.svg',
+    img: '../imgs/programacao/next.svg',
     ferramenta: 'NextJS',
     desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
   },
   {
-    img: '../programacao/react.svg',
+    img: '../imgs/programacao/react.svg',
     ferramenta: 'React Native',
     desc: 'React Native é uma biblioteca criada pelo Facebook, para desenvolvimento de App mobile.'
   },
   {
-    img: '../programacao/sql.svg',
+    img: '../imgs/programacao/sql.svg',
     ferramenta: 'MySQL',
     desc: 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL.'
   },
   {
-    img: '../programacao/html.svg',
+    img: '../imgs/programacao/html.svg',
     ferramenta: 'HTML',
     desc: 'Alem do proprio HTML o dominio do CSS e JavaScript são a base do desenvolvimento web.'
   }
@@ -27,12 +27,12 @@ const skills = [
 
 const exp = [
   {
-    img: '../programacao/exp/linkedin.png',
+    img: '../imgs/programacao/exp/linkedin.png',
     titulo: 'React Native',
     desc: 'Projeto Desenvolvido para gestão de empresa de investimentos.'
   },
   {
-    img: '../programacao/exp/linkedin.png',
+    img: '../imgs/programacao/exp/linkedin.png',
     titulo: 'NextJS',
     desc: 'Projeto desenvolvido para Lojas de multiplos Segmentos'
   }
