@@ -38,7 +38,7 @@ const exp = [
   }
 ]
 
-export default function Code() {
+export default function Marketing() {
   return (
     <div className="py-10 dark:bg-bg">
       <section>

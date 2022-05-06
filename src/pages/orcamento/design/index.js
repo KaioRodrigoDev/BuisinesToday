@@ -116,7 +116,7 @@ export default function Design() {
                   </p>
                 </div>
               </div>
-              <div className="bg-blue cursor-pointer shadow rounded-lg p-8 relative z-30 mt-7">
+              <div className="bg-blue cursor-pointer shadow rounded-lg p-8 relative z-30 mt-3">
                 <div className="md:flex items-center justify-between">
                   <h2 className="text-2xl font-semibold leading-6 text-white">
                     Carrosel

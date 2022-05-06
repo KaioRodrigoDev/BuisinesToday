@@ -28,13 +28,13 @@ const skills = [
 const exp = [
   {
     img: '../programacao/exp/linkedin.png',
-    titulo: 'NextJS',
-    desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
+    titulo: 'React Native',
+    desc: 'Projeto Desenvolvido para gestão de empresa de investimentos.'
   },
   {
     img: '../programacao/exp/linkedin.png',
     titulo: 'NextJS',
-    desc: 'NextJS é uma biblioteca JavaScript para construção de aplicações web modernas.'
+    desc: 'Projeto desenvolvido para Lojas de multiplos Segmentos'
   }
 ]
 
@@ -117,10 +117,10 @@ export default function Code() {
                   <div className=" my-4">
                     <div className="lg:flex text-center md:text-left lg:text-left items-center justify-center ">
                       <div className="pl-6">
-                        <h1 className="text-2xl font-bold text-principal">
+                        <h1 className="text-4xl font-bold text-principal">
                           {item.titulo}
                         </h1>
-                        <p className="text-xs font-medium mt-4">{item.desc}</p>
+                        <p className="text-sm font-medium mt-4">{item.desc}</p>
                       </div>
 
                       <div className="flex pt-4 lg:pt-0 lg:justify-end md:justify-center justify-center lg:pr-12 ">
@@ -140,9 +140,9 @@ export default function Code() {
       </section>
 
       <section>
-        <div className="xl:mx-auto xl:container py-20 2xl:px-0 px-6">
+        <div className="xl:mx-auto xl:container py-20  px-6">
           <div className="lg:flex items-center justify-between  text-gray-600 dark:text-white">
-            <div className=" lg:w-1/2 w-full">
+            <div className=" lg:w-1/2  w-full">
               <h1
                 role="heading"
                 className="md:text-5xl text-3xl font-bold leading-10 mb-3 text-principal"
@@ -150,12 +150,12 @@ export default function Code() {
                 Custos
               </h1>
               <p className="text-base leading-4 text-slate-400 ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Selecione seu plano e fale conosco !
               </p>
               <p role="contentinfo" className="text-base leading-5 mt-5 ">
-                We’re working on a suit of tools to make managing complex
-                systems easier, for everyone for free. we can’t wait to hear
-                what you think
+                Todos os planos são desenvolvidos estrategias especificas.{' '}
+                <br></br>
+                Estamos a todo momento procurando melhorias para o seu negocio
               </p>
             </div>
             <div
@@ -173,7 +173,7 @@ export default function Code() {
                     Landing Page
                   </h2>
                   <p className="text-2xl font-semibold md:mt-0 mt-4 leading-6 text-white">
-                    R$ 2700
+                    R$ 1700
                   </p>
                 </div>
                 <p className="md:w-80 text-base leading-6 mt-4 text-slate-400">
@@ -187,11 +187,12 @@ export default function Code() {
                       Site Institucional
                     </h2>
                     <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-white">
-                      R$3000<span className="font-normal text-base"></span>
+                      R$2700<span className="font-normal text-base"></span>
                     </p>
                   </div>
                   <p className="md:w-80 text-base leading-6 mt-4 text-slate-400">
-                    Unlimited products features and dedicated support channels
+                    Site institucional é a representação virtual de sua empresa
+                    ou negocio
                   </p>
                 </div>
               </div>
@@ -201,12 +202,12 @@ export default function Code() {
                     E-Commerce
                   </h2>
                   <p className="text-2xl md:mt-0 mt-4 font-semibold leading-6 text-white">
-                    R$ 5000
+                    R$ 4000
                     <span className="font-normal text-base">/a partir</span>
                   </p>
                 </div>
                 <p className="md:w-80 text-base leading-6 mt-4 text-slate-400">
-                  Unlimited products features and dedicated support channels
+                  Uma loja totalmente desenvolvida e pensada a seu gosto
                 </p>
               </div>
             </div>

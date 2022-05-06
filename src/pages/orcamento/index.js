@@ -8,8 +8,8 @@ const Info = [
     title: 'Design',
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
-    itens: ['Motion Design', 'teste2', 'teste3'],
-    price: '1.000',
+    itens: ['Motion Design', 'Identidade Visual', 'Posts estáticos'],
+    price: '60',
     img: './orcamento/design.png',
     link: 'orcamento/design'
   },
@@ -18,7 +18,7 @@ const Info = [
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['E-commerce', 'Aplicativos', 'Landing Page'],
-    price: '3.000',
+    price: '2.000',
     img: './orcamento/code.png',
     link: 'orcamento/programacao'
   },
@@ -36,7 +36,7 @@ const Info = [
     desc: 'Somos um grupo visionário e criativo',
     sub: 'Nosso foco é criar experiências inovadoras e impactantes para os nossos clientes.',
     itens: ['teste', 'teste2', 'teste3'],
-    price: '1.000',
+    price: '1.200',
     img: './orcamento/marketing.png',
     link: 'orcamento/marketing'
   }
